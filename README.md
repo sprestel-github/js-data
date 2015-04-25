@@ -10,7 +10,7 @@ Unlike Backbone and Ember Models, JSData does not require the use of getters and
 
 Supporting relations, computed properties, model lifecycle control and a slew of other features, JSData is the tool for [giving your data the respect it deserves](http://confreaks.tv/videos/mwjs2015-give-your-data-the-respect-it-deserves).
 
-It's also written in ES6. Contributions ftw!
+It's also written in ES6. Contributions ftw!!
 
 Support is handled via the [Mailing List](https://groups.io/org/groupsio/jsdata).
 
