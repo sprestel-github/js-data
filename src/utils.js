@@ -366,7 +366,18 @@ let join = (items, separator) => {
 };
 
 let makePath = (...args) => {
-  let result = join(args, '/');
+  // let result = join(args, '/');
+
+  // sprestel-github, 25.04.15
+    let result = '';
+
+    if (typeof(args[0]) === 'function') {
+       result = args[0](args[2]);
+    }
+    else {
+      result = join(args, '/');
+    }
+
   return result.replace(/([^:\/]|^)\/{2,}/g, '$1/');
 };
 

@@ -66,6 +66,12 @@ function _getReactFunction(DS, definition, resource) {
 
 function _inject(definition, resource, attrs, options) {
   let _this = this;
+
+  // sprestel-github, 25.04.15:
+    if (typeof definition.prepareData === 'function') {
+      attrs = definition.prepareData(attrs);
+    }
+
   let _react = _getReactFunction(_this, definition, resource, attrs, options);
 
   let injected;
